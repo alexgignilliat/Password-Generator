@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,28 +21,69 @@
             </div>
         </div>
         <br>
+        
         <div class="container" id="generatorContainer">
             <div class="row">
                 <div class="col-xs-10 col-lg-12">
                     <h4>Generate a Password</h4>
                 </div>
             </div>
-            <div class="row" id=textAreaRow>
+            <hr>
+            <br>
+            <div class="container" id="form">
+                <div class="row">
+                    <div class="col-12" >
+                        <div class="form-row">
+                            How many characters? 
+                            <div class="col-12">
+                            <input type="text" style="text-align: center;" class="form-control" placeholder="8 - 128">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="lowercaseCheckbox">
+            <label class="form-check-label" for="lowercaseCheckbox">
+              Lowercase
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="uppercaseCheckbox">
+            <label class="form-check-label" for="uppercaseCheckbox">
+              Uppercase
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="numberCheckbox">
+            <label class="form-check-label" for="numberCheckbox">
+              Numbers
+            </label>
+        </div>
+        <div class="form-check" id="bottomCheckbox">
+            <input class="form-check-input" type="checkbox" value="" id="specialCheckbox">
+            <label class="form-check-label" for="specialCheckbox">
+              Special Characters
+            </label>
+        </div>
+        <hr> 
+        <div class="row" id=textAreaRow>
                 <div class="col-xs-12 col-sm-12">
                     <textarea readonly id="password" placeholder="Your Secure Password"
                         aria-label="Generated Password"></textarea>
                 </div>
-            </div>
-            <div class="row">
+        </div>
+        <div class="row">
                 <div class="col-12">
-                    <button type="button" id="generate" class="btn btn-outline-primary">Generate Password</button>
+                    <button type="button" id="generate" class="btn btn-outline-primary"
+                        onclick=generateButtonClick()>Generate Password</button>
                     <button type="button" id="copy" class="btn btn-outline-primary">Copy to Clipboard</button>
                 </div>
-            </div>
+        </div>
         </div>
     </div>
     <footer>- Alex Gignilliat -<br>&copy; 2019</footer>
-    <script src="password-generator.js" async defer></script>
+    <script src="password-generator.js"></script>
 </body>
 
 </html>
