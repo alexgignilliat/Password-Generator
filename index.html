@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class=container id=mainContainer>
+        <div class="row">
+            <div class="col-12">
+                <h1 id=mainHeader>Password Generator</h1>
+            </div>
+        </div>
+        <br>
+        <div class="container" id="generatorContainer">
+            <div class="row">
+                <div class="col-xs-10 col-lg-12">
+                    <h4>Generate a Password</h4>
+                </div>
+            </div>
+            <div class="row" id=textAreaRow>
+                <div class="col-xs-12 col-sm-12">
+                    <textarea readonly id="password" placeholder="Your Secure Password"
+                        aria-label="Generated Password"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" id="generate" class="btn btn-outline-primary">Generate Password</button>
+                    <button type="button" id="copy" class="btn btn-outline-primary">Copy to Clipboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>- Alex Gignilliat -<br>&copy; 2019</footer>
+    <script src="password-generator.js" async defer></script>
+</body>
+
+</html>
