@@ -11,8 +11,8 @@ body {
     background-image: url('https://thumbs.gfycat.com/LegalCraftyFinch-small.gif');
     background-size: cover;
     height: 100%;
-    margin: 4% auto;
-    width: 45%;
+    margin-top: 20px;
+    width: 500px;
     border: 1px solid #fcfcfc;
     box-shadow: 0px 0px 3px rgb(255, 255, 255);
     border-radius: 25px;
@@ -63,6 +63,10 @@ footer {
     font-size: 14px;
 }
 
+#bottomCheckbox {
+    margin-bottom: 20px;
+}
+
 hr {
     height: 1px;
     background-color: #003f6323;
@@ -72,8 +76,9 @@ hr {
 /*---START QUERY---*/
 @media only screen and (max-width: 691px) {
     #mainContainer {
-      margin: 8% auto;
-      width: 80%;
+      margin: 5% auto;
+      width: 100%;
+      padding: 15px 0px;
     }
     .btn {
         margin: 5px;
