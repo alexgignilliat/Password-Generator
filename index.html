@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -36,7 +36,7 @@
                         <div class="form-row">
                             How many characters? 
                             <div class="col-12">
-                            <input type="text" style="text-align: center;" class="form-control" placeholder="8 - 128">
+                            <input type="number" id="length" style="text-align: center;" class="form-control" placeholder="8 - 128">
                             </div>
                         </div>
                     </div>
@@ -69,15 +69,15 @@
         <hr> 
         <div class="row" id=textAreaRow>
                 <div class="col-xs-12 col-sm-12">
-                    <textarea readonly id="password" placeholder="Your Secure Password"
+                    <textarea readonly id="result" placeholder="Your Secure Password"
                         aria-label="Generated Password"></textarea>
                 </div>
         </div>
         <div class="row">
                 <div class="col-12">
                     <button type="button" id="generate" class="btn btn-outline-primary"
-                        onclick=generateButtonClick()>Generate Password</button>
-                    <button type="button" id="copy" class="btn btn-outline-primary">Copy to Clipboard</button>
+                        >Generate Password</button>
+                    <button type="button" id="clipboard" onclick=copy() class="btn btn-outline-primary">Copy to Clipboard</button>
                 </div>
         </div>
         </div>
