@@ -9,8 +9,6 @@ const specialEl = document.getElementById('specialCheckbox');
 const generateEl = document.getElementById('generate');
 const clipboardEl = document.getElementById('clipboard');
 
-//This is
-
 const randomFunc = {
     lower: getRandomLower,
     upper: getRandomUpper,
@@ -57,10 +55,15 @@ function generatePassword(lower, upper, number, special, length) {
         return '';
     }
 
+    if (length < 8 || length > 128) {
+        alert("You must select a length between 8 - 128.")
+        return '';
+    }
+
     for (let i = 0; i < length; i+= typesCount) {
         typesArray.forEach(type => {
             const funcName = Object.keys(type)[0];
-            console.log('functname:' + funcName)
+            // console.log('functname:' + funcName)
             generatedPassword += randomFunc[funcName]();
             
         });
@@ -69,16 +72,7 @@ function generatePassword(lower, upper, number, special, length) {
 
     return finalPassword;
 
-    
 }
-
-
-  
-
-
-
-
-
 
 //These are my functions for generating random characters.//
 
