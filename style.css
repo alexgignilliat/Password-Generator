@@ -36,7 +36,6 @@ p {
     width: 100%;
     height: auto;
     text-align: center;
-    box-shadow: 0px 0px 5px 10px rgb(20, 20, 20);
     max-width: 500px;
     min-width: 325px;
     min-height: 300px;
@@ -47,8 +46,8 @@ p {
     margin: 0 auto;
 }
 #mainContainer:hover{
-    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.37);
-    transition: 1s;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.473);
+    transition: .4s;
 }
 
 h5 {
