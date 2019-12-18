@@ -80,7 +80,6 @@ function generatePassword(lower, upper, number, special, length){
         }
     };
     if (special === true){
-        checkArr.push(getRandomSpecial())
         for(i = 0; i < length; i++){
             checkArr.push(getRandomSpecial())
         }
