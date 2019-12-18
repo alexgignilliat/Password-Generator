@@ -16,12 +16,12 @@ var generateEl = document.getElementById('generate');
 //Grab html element for the copy to clipboard feature
 var clipboardEl = document.getElementById('clipboard');
 
-// var randomize = {
-//     lower: getRandomLower,
-//     upper: getRandomUpper,
-//     number: getRandomNumber,
-//     special: getRandomSpecial
-// };
+var randomize = {
+    lower: getRandomLower,
+    upper: getRandomUpper,
+    number: getRandomNumber,
+    special: getRandomSpecial
+};
 /*Every character is assigned a number. Example: 97 = lowercase "a".
 Using fromCharCode, any ASCII character can be retrieved.
 Pretty cool alternative to typing them all out into arrays.*/
@@ -56,28 +56,45 @@ generateEl.addEventListener('click', function() {
 
 function generatePassword(lower, upper, number, special, length){
     var checkArr = []
+    if (length > 128 || length < 8){
+        alert("Password length must be between 8 and 128 characters.")
+    }
+
+    if (lower === false && upper === false && number === false && special === false){
+        alert("Must select at least one character type to generate your password.")
+    }
+    
     if (lower === true){
-        checkArr.push(getRandomLower()) //try with and without ()
-    }
+        for(i = 0; i < length; i++){
+            checkArr.push(getRandomLower())
+        }
+    };
     if (upper === true){
-        checkArr.push(getRandomUpper())
-    }
+        for(i = 0; i < length; i++){
+            checkArr.push(getRandomUpper())
+        }
+    };
     if (number === true){
-        checkArr.push(getRandomNumber())
-    }
+        for(i = 0; i < length; i++){
+            checkArr.push(getRandomNumber())
+        }
+    };
     if (special === true){
         checkArr.push(getRandomSpecial())
-     } else "alert user"
-
-    //  console.log(checkArr)
+        for(i = 0; i < length; i++){
+            checkArr.push(getRandomSpecial())
+        }
+    };
 
      var generatedPass = "";
 
-     for(i = 1; i < length; i++){
+     for(i = 0; i < length; i++){
         generatedPass += checkArr[Math.floor(Math.random() * checkArr.length)] //random number between 0-3 in an index
      }
      return generatedPass
 }
+
+
 
 // function generatePassword(lower, upper, number, special, length) {
 //     var generatedPass = "";
@@ -106,6 +123,8 @@ function generatePassword(lower, upper, number, special, length){
 //     var finalPassword = generatedPass.slice(0, length);
 //     return finalPassword;
 // }
+
+
 
 //Function for copying to clipboard
 function copy() {
