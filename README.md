@@ -6,7 +6,7 @@ This is a password generator created using JavaScript. This was a huge learning 
 
 ## Installation
 
-Clone to your local machine and open in your favorite code editor to check it out! Or visit the deployed version at: [Passwrod Generator on GitHub Pages](https://alexgignilliat.github.io/Password-Generator/)
+Clone to your local machine and open in your favorite code editor to check it out! Or visit the deployed version at: [Password Generator on GitHub Pages](https://alexgignilliat.github.io/Password-Generator/)
 
 ## Technologies Utilized
 
