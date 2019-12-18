@@ -1,3 +1,23 @@
+function getRandomLower() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
+console.log(getRandomLower())
+
+function getRandomUpper() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
+console.log(getRandomUpper())
+
+function getRandomNumber() {
+    return String.fromCharCode(Math.floor(Math.random() * 9) + 48)
+}
+console.log(getRandomNumber())
+
+function getRandomSpecial() {
+    return String.fromCharCode(Math.floor(Math.random() * 14) + 33)
+}
+console.log(getRandomSpecial())
+
 //This is where JavaScript is able to select elements in my HTML by using document.getElementByID//
 
 const resultEl = document.getElementById('result');
@@ -9,7 +29,7 @@ const specialEl = document.getElementById('specialCheckbox');
 const generateEl = document.getElementById('generate');
 const clipboardEl = document.getElementById('clipboard');
 
-const randomFunc = {
+const randomize = {
     lower: getRandomLower,
     upper: getRandomUpper,
     number: getRandomNumber,
@@ -38,8 +58,8 @@ generateEl.addEventListener('click', () => {
 function copy() {
     let textarea = document.getElementById("result");
     textarea.select();
-    document.execCommand("copy");
-  }
+    document.execCommand("copy"); 
+}
 
 function generatePassword(lower, upper, number, special, length) {
     let generatedPassword = "";
@@ -47,51 +67,30 @@ function generatePassword(lower, upper, number, special, length) {
     const typesCount = lower + upper + number + special;
     console.log("typesCount: " + typesCount)
 
-    const typesArray = [{lower}, {upper}, {number}, {special}].filter(item => Object.values(item)[0]);
+    const typesArray = [{ lower }, { upper }, { number }, { special }].filter(item => Object.values(item)[0]);
     console.log("typesArray: " + typesArray);
-
-    if (typesCount === 0) {
-        alert("You must select at least one character type.")
-        return '';
-    }
 
     if (length < 8 || length > 128) {
         alert("You must select a length between 8 - 128.")
+        return '';
+    }
+    
+    if (typesCount === 0) {
+        alert("You must select at least one character type.")
         return '';
     }
 
     for (let i = 0; i < length; i+= typesCount) {
         typesArray.forEach(type => {
             const funcName = Object.keys(type)[0];
-            // console.log('functname:' + funcName)
-            generatedPassword += randomFunc[funcName]();
+            console.log('functname:' + funcName)
+            generatedPassword += randomize[funcName]();
             
         });
-    }
+        }
     let finalPassword = generatedPassword.slice(0, length)
 
     return finalPassword;
 
 }
 
-//These are my functions for generating random characters.//
-
-function getRandomLower() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-}
-console.log(getRandomLower())
-
-function getRandomUpper() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-}
-console.log(getRandomUpper())
-
-function getRandomNumber() {
-    return String.fromCharCode(Math.floor(Math.random() * 9) + 48)
-}
-console.log(getRandomNumber())
-
-function getRandomSpecial() {
-    return String.fromCharCode(Math.floor(Math.random() * 14) + 33)
-}
-console.log(getRandomSpecial())
