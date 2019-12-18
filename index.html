@@ -13,77 +13,82 @@
 
 <body>
     <nav class="navbar" id="navbar" style="background-color: rgba(255, 255, 255, 0.041); border-radius: 6px;">
-        <a class="navbar-brand" style="color: white; text-align: center; width: 100%; letter-spacing: 8px; text-shadow: 0px 0px 5px white;" href="#">- Password Generator -</a>
-        
+        <a class="navbar-brand"
+            style="color: white; text-align: center; width: 100%; letter-spacing: 8px; text-shadow: 0px 0px 5px white;"
+            href="#">- Password Generator -</a>
+
     </nav>
     <div class="container my-auto justify-content-center" id="backgroundContainer">
         <br>
         <div class="container my-auto">
-        <div class="row">
-        <div class="col-12" id="finalContainer">
-            <br>
-            <br>
-        <div class="container justify-content-center" id="mainContainer">
-            <div class="row" style="background-color: rgba(61, 61, 61, 0.075); margin-top: -8%; padding: 4px; border-radius: 4px;">
-                <div class="col-lg-7">
-                    <div class="container" id="form">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-row" style="text-align: center; width: 100%;">
-                                    How many characters? 
-                                    <div class="col-12">
-                                    <input type="number" id="length" style="text-align: center;" class="form-control" placeholder="8 - 128">
+            <div class="row">
+                <div class="col-12" id="finalContainer">
+                    <br>
+                    <br>
+                    <div class="container justify-content-center" id="mainContainer">
+                        <div class="row"
+                            style="background-color: rgba(61, 61, 61, 0.075); margin-top: -8%; padding: 4px; border-radius: 4px;">
+                            <div class="col-lg-7">
+                                <div class="container" id="form">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-row" style="text-align: center; width: 100%;">
+                                                How many characters?
+                                                <div class="col-12">
+                                                    <input type="number" id="length" style="text-align: center;"
+                                                        class="form-control" placeholder="8 - 128">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="lowercaseCheckbox">
+                                    <label class="form-check-label" for="lowercaseCheckbox">
+                                        Lowercase
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="uppercaseCheckbox">
+                                    <label class="form-check-label" for="uppercaseCheckbox">
+                                        Uppercase
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="numberCheckbox">
+                                    <label class="form-check-label" for="numberCheckbox">
+                                        Numbers
+                                    </label>
+                                </div>
+                                <div class="form-check" id="bottomCheckbox">
+                                    <input class="form-check-input" type="checkbox" value="" id="specialCheckbox">
+                                    <label class="form-check-label" for="specialCheckbox">
+                                        Special (!,@,#,etc)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id=textAreaRow>
+                            <div class="col-xs-12 col-sm-12" style="margin: auto;">
+                                <textarea readonly id="result" placeholder="Your Secure Password"
+                                    aria-label="Generated Password"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="button" id="generate" class="btn btn-outline-primary"
+                                    class="buttons">Generate Password</button>
+                                <button type="button" id="clipboard" onclick=copy() class="btn btn-outline-primary"
+                                    class="buttons">Copy to Clipboard</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="lowercaseCheckbox">
-                        <label class="form-check-label" for="lowercaseCheckbox">
-                          Lowercase
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="uppercaseCheckbox">
-                        <label class="form-check-label" for="uppercaseCheckbox">
-                          Uppercase
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="numberCheckbox">
-                        <label class="form-check-label" for="numberCheckbox">
-                          Numbers
-                        </label>
-                    </div>
-                    <div class="form-check" id="bottomCheckbox">
-                        <input class="form-check-input" type="checkbox" value="" id="specialCheckbox">
-                        <label class="form-check-label" for="specialCheckbox">
-                          Special (!,@,#,etc)
-                        </label>
-                    </div>
-                </div>
             </div>
-                <div class="row" id=textAreaRow>
-                    <div class="col-xs-12 col-sm-12" style="margin: auto;">
-                        <textarea readonly id="result" placeholder="Your Secure Password"
-                            aria-label="Generated Password"></textarea>
-                    </div>
-                </div>
-            <div class="row">
-                    <div class="col-12">
-                        <button type="button" id="generate" class="btn btn-outline-primary" class="buttons"
-                            >Generate Password</button>
-                        <button type="button" id="clipboard" onclick=copy() class="btn btn-outline-primary" class="buttons">Copy to Clipboard</button>
-                    </div>
-            </div>
-            </div>
-        </div>
-        </div>
         </div>
     </div>
     <footer>- Alex Gignilliat -<br>&copy; 2019</footer>
-<script src="password-generator.js"></script>
+    <script src="password-generator.js"></script>
 </body>
