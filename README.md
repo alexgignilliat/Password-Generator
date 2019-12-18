@@ -6,7 +6,7 @@ This is a password generator created using JavaScript. This was a huge learning 
 
 ## Installation
 
-Clone to your local machine and open in your favorite code editor to check it out! Or visit the deployed version at: [Portfolio on GitHub Pages](https://alexgignilliat.github.io/Portfolio-Responsive/)
+Clone to your local machine and open in your favorite code editor to check it out! Or visit the deployed version at: [Passwrod Generator on GitHub Pages](https://alexgignilliat.github.io/Password-Generator/)
 
 ## Technologies Utilized
 
@@ -52,5 +52,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 - - - - -
+"If you don't believe me or don't get it, I don't have time to try to convince you, sorry." - Satoshi Nakamoto
 
 “Remember to look up at the stars and not down at your feet. Try to make sense of what you see and wonder about what makes the Universe exist. Be curious. And however difficult life may seem, there is always something you can do and succeed at. It matters that you don't just give up."  - Stephen Hawking
