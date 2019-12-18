@@ -1,3 +1,5 @@
+alert("DISCLAIMER: THIS PASSWORD IS NOT YET CRYPTOGRAPHICALLY SECURE. While this password should be fine for things like Twitter, Facebook, etc, I am not responsible for any outcome resulting from or otherwise relating to this application in any way. For all practical purposes, until officially stated otherwise, THIS APPLICATION IS IN IT'S PRE-ALPHA PHASE.")
+
 //This is where JavaScript is able to select elements in my HTML by using document.getElementByID//
 //Grab html element for the result textarea
 var resultEl = document.getElementById('result');
@@ -58,10 +60,13 @@ function generatePassword(lower, upper, number, special, length){
     var checkArr = []
     if (length > 128 || length < 8){
         alert("Password length must be between 8 and 128 characters.")
+        return ''
     }
 
     if (lower === false && upper === false && number === false && special === false){
         alert("Must select at least one character type to generate your password.")
+        return ''
+    
     }
     
     if (lower === true){
