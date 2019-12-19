@@ -1,4 +1,4 @@
-alert("DISCLAIMER: THIS PASSWORD IS NOT YET CRYPTOGRAPHICALLY SECURE. While this password should be fine for things like Twitter, Facebook, etc, I am not responsible for any outcome resulting from or otherwise relating to this application in any way. For all practical purposes, until officially stated otherwise, THIS APPLICATION IS IN IT'S PRE-ALPHA PHASE.")
+alert("DISCLAIMER: THIS APPLICATION DOES NOT YET GENERATE CRYPTOGRAPHICALLY SECURE PASSWORDS. While this password should be fine for things like Twitter, Facebook, etc, I am not responsible for any outcome resulting from or otherwise relating to this application in any way. For all practical purposes, until officially stated otherwise, THIS APPLICATION IS IN IT'S PRE-ALPHA PHASE.")
 
 //This is where JavaScript is able to select elements in my HTML by using document.getElementByID//
 //Grab html element for the result textarea
