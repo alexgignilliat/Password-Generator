@@ -20,7 +20,7 @@ HTML5, CSS3, Bootstrap 4, JavaScript
 
 ## Roadmap, Important Notes, etc
 
-This application started at a time when I was just getting my feet wet with JavaScript. That being said, the end goal for this application is to provide the user with a cryptographically secure password for things like:
+I started building this application at a time when I was just getting my feet wet with JavaScript. That being said, the end goal for this application is to provide the user with a cryptographically secure password for things like:
 
 - Cryptocurrency wallets (Bitcoin, Ethereum, XRP, etc.)
 - Devices like computers, phones and tablets that demand the highest possible security (Work devices, devices used for finances, etc.)
