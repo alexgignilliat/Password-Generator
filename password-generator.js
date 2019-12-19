@@ -56,24 +56,30 @@ generateEl.addEventListener('click', function() {
     );
 });
 
+/*This is pretty much where the magic happens.
+I've got a function that checks several things:
+- Create an array
+- Check if certain parameters are met before generating a password
+- If something is true (checkbox clicked), push it into the array, call it's respective character's function
+*/
+
 function generatePassword(lower, upper, number, special, length){
     var checkArr = []
     if (length > 128 || length < 8){
         alert("Password length must be between 8 and 128 characters.")
         return ''
-    }
-
+    };
     if (lower === false && upper === false && number === false && special === false){
         alert("Must select at least one character type to generate your password.")
         return ''
-    
-    }
-    
+    };
+
     if (lower === true){
         for(i = 0; i < length; i++){
             checkArr.push(getRandomLower())
         }
     };
+
     if (upper === true){
         for(i = 0; i < length; i++){
             checkArr.push(getRandomUpper())
@@ -94,41 +100,9 @@ function generatePassword(lower, upper, number, special, length){
 
      for(i = 0; i < length; i++){
         generatedPass += checkArr[Math.floor(Math.random() * checkArr.length)] //random number between 0-3 in an index
-     }
+     };
      return generatedPass
 }
-
-
-
-// function generatePassword(lower, upper, number, special, length) {
-//     var generatedPass = "";
-//     var checkboxes = lower + upper + number + special;
-// // console.log("checkboxes: " + checkboxes)
-//     var checkArray = [{ lower }, { upper }, { number }, { special }].filter(item => Object.values(item)[0]);
-// // console.log("typesArray: " + typesArray);
-// //Passord length check
-//     if (length < 8 || length > 128) {
-//         alert("You must select a length between 8 - 128.")
-//         return '';
-//     }
-// //At least one checkbox must be selected to generate password
-//     if (checkboxes === 0) {
-//         alert("You must select at least one character type.")
-//         return '';
-//     }
-//     // for (var i = 0; i < length; i+= checkboxes) {
-//     //     checkArray.forEach(type => {
-//     //         var funcName = Object.keys(type)[0];
-//     //         console.log('functname:' + funcName)
-//     //         generatedPass += randomize[funcName]();
-            
-//     //     });
-//     //     }
-//     var finalPassword = generatedPass.slice(0, length);
-//     return finalPassword;
-// }
-
-
 
 //Function for copying to clipboard
 function copy() {
@@ -136,5 +110,6 @@ function copy() {
     textarea.select();
     document.execCommand("copy"); 
 }
+
 
 
