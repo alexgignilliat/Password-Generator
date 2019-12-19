@@ -9,13 +9,11 @@ body {
     color: #434c54;
     background-color: rgba(116, 49, 49, 0); 
     width: 100%;
-    height: auto;
     margin: 0 auto;
 }
 #backgroundContainer {
     background-position: center;
     width: 100%;
-    height: auto;
     margin: 0 auto;
 }
 p {
