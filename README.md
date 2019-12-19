@@ -8,7 +8,7 @@ For all practical purposes, until officially stated otherwise, **THIS APPLICATIO
 - - - - -
 ## Description
 
-("assets/images/screenshotPWGEN.png")
+(assets/images/screenshotPWGEN.png)
 
 This is a password generator created using JavaScript. This was a huge learning experience, and while there are still a few things I'm working out, it's generally how I envisioned it. I went into this knowing almost nothing about JavaScript, and although I most definitely have a lot more to learn, I believe I now have a solid foundation to build upon.
 
