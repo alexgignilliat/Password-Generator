@@ -63,14 +63,12 @@ h5 {
     line-height: 20px;
     margin: auto;
 }
-
 #clipboard, #generate {
     background-color: rgba(0, 0, 0, 0.123);
     color: black;
     border: 1px solid rgba(0, 0, 0, 0.356);
     margin-top: 10px;
 }
-
 #clipboard:hover, #generate:hover {
     background-color: rgba(0, 0, 0, 0.671);
     color: white;

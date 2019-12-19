@@ -1,10 +1,10 @@
 # Password Generator
 
-**DISCLAIMER: THIS APPLICATION DOES NOT YET GENERATE CRYPTOGRAPHICALLY SECURE PASSWORDS.** 
+**DISCLAIMER: This application does not yet generate cryptographically secure passwords.** 
 
 While this password should be fine for things like Twitter, Facebook, etc, I am not responsible for any outcome resulting from or otherwise relating to this application in any way. 
 
-For all practical purposes, until officially stated otherwise, **THIS APPLICATION IS IN ITS PRE-ALPHA PHASE**.
+For all practical purposes, until officially stated otherwise, this application is in its pre-alpha phase.
 - - - - -
 ## Description
 
