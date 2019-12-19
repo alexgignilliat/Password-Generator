@@ -1,6 +1,6 @@
 # Password Generator
 
-**DISCLAIMER**: THIS APPLICATION DOES NOT YET GENERATE CRYPTOGRAPHICALLY SECURE PASSWORDS. While this password should be fine for things like Twitter, Facebook, etc, I am not responsible for any outcome resulting from or otherwise relating to this application in any way. For all practical purposes, until officially stated otherwise, THIS APPLICATION IS IN IT'S PRE-ALPHA PHASE.
+**DISCLAIMER: THIS APPLICATION DOES NOT YET GENERATE CRYPTOGRAPHICALLY SECURE PASSWORDS.** While this password should be fine for things like Twitter, Facebook, etc, I am not responsible for any outcome resulting from or otherwise relating to this application in any way. For all practical purposes, until officially stated otherwise, THIS APPLICATION IS IN IT'S PRE-ALPHA PHASE.
 
 This is a password generator created using JavaScript. This was a huge learning experience, and while there are still a few things I'm working out, it's generally how I envisioned it. I went into this knowing almost nothing about JavaScript, and although I most definitely have a lot more to learn, I believe I now have a solid foundation to build upon.
 
